@@ -84,3 +84,11 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+@media (min-width: 768px) {
+    .cards {
+        overflow-x: hidden;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+}

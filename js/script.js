@@ -1,19 +1,20 @@
-const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: true,
+let middleScreen = window.matchMedia('(max-width: 767px)');
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-    },
-});
-// const element = document.querySelector('[class*=swiper]');
-const element = document.querySelector('.swiper');
-if (window.innerWidth > 320) {
-    element.classList.remove('swiper');
+if (middleScreen.matches) {
+    new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
+        },
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        },
+    });
+} else {
+    document.querySelector('.swiper').classList.remove('swiper');
 }
