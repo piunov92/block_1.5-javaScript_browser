@@ -1,8 +1,15 @@
 @font-face {
     font-family: "TT Lakes Regular";
     src:
-            url("../fonts/TTLakes-Regular.woff") format("woff");
+            url("../fonts/TTLakes-Regular.woff") format("woff"),
             url("../fonts/TTLakes-Regular.eot") format("eot");
+}
+
+@font-face {
+    font-family: "TT Lakes Medium";
+    src:
+            url("../fonts/TTLakes-Medium.woff") format("woff"),
+            url("../fonts/TTLakes-Medium.eot") format("eot");
 }
 
 *, *:before, *:after {
@@ -102,6 +109,13 @@
     .show-cards__title {
         padding-left: 9px;
         align-self: center;
+        color: #1B1C21;
+        font-family: "TT Lakes Medium", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
     }
 
     .show-cards__button {
