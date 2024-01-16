@@ -85,10 +85,41 @@
     cursor: pointer;
 }
 
+.show-cards {
+    display: none;
+}
 @media (min-width: 768px) {
     .cards {
         overflow-x: hidden;
         flex-wrap: wrap;
         justify-content: left;
+    }
+    .show-cards {
+        display: flex;
+        margin: auto 1rem;
+    }
+
+    .show-cards__title {
+        padding-left: 9px;
+        align-self: center;
+    }
+
+    .show-cards__button {
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+    }
+
+    .show-cards__button svg {
+        margin-bottom: -5px;
+    }
+
+    .cards__item--hide {
+        display: none !important;
+    }
+
+    .cards__item--show {
+        display: block !important;
     }
 }
