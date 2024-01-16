@@ -15,6 +15,13 @@ if (middleScreen.matches) {
             onlyInViewport: false,
         },
     });
+
 } else {
     document.querySelector('.swiper').classList.remove('swiper');
 }
+
+window.onresize = function (event) {
+    if (middleScreen.matches) {
+        location.reload();
+    }
+};
