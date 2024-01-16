@@ -96,7 +96,7 @@
     }
     .show-cards {
         display: flex;
-        margin: auto 1rem;
+        margin: 0 1rem;
     }
 
     .show-cards__title {
