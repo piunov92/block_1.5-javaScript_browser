@@ -57,11 +57,11 @@
 
 .cards__item {
     position: relative;
-    width: 288px !important;
+    width: 240px !important;
     margin: 1rem 1rem 2rem 1rem;
     border-radius: 6px;
-    /*border: 1px solid #EAEAEA;*/
-    border: 1px solid red;
+    border: 1px solid #EAEAEA;
+    /*border: 1px solid red;*/
     background: #FFF;
 }
 
@@ -115,11 +115,25 @@
         margin-bottom: -5px;
     }
 
+    .cards__item {
+        width: 222px !important;
+    }
+
     .cards__item--hide {
         display: none !important;
     }
 
     .cards__item--show {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1120px) {
+    .cards__item {
+        width: 240px !important;
+    }
+
+    .cards__item--show-large {
         display: block !important;
     }
 }
