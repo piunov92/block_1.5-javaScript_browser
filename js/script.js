@@ -1,5 +1,4 @@
 let middleScreen = window.matchMedia('(max-width: 767px)');
-
 if (middleScreen.matches) {
     new Swiper('.swiper', {
         direction: 'horizontal',
@@ -14,14 +13,10 @@ if (middleScreen.matches) {
             enabled: true,
             onlyInViewport: false,
         },
-    });
-
-} else {
+    }); } else {
     document.querySelector('.swiper').classList.remove('swiper');
 }
 
 window.onresize = function (event) {
-    if (middleScreen.matches) {
-        location.reload();
-    }
+    window.setTimeout('location.reload()', 200);
 };
